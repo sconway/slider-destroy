@@ -1,0 +1,94 @@
+.page-content{
+  height: 800px;
+  width: 100%;
+}
+
+
+.slider-container {
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  float: left;
+  height: 100%;
+  width: 33%;
+}
+
+.slide1 {
+  background: #F00;
+}
+
+.slide2 {
+  background: #0F0;
+}
+
+.slide3 {
+  background: #00F;
+}
+
+.carousel-nav {
+  display: none;
+}
+
+
+@media only screen and (max-width : 401px) {
+
+.slider-container {
+  overflow: hidden;
+  width: 400px;
+}
+
+.slider {
+  width: 300%;
+}
+
+.slide {
+  position: relative;
+  width: 400px;
+}
+
+.carousel-nav {
+  display: inherit;
+  height: 50px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.carousel-nav ul {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-nav ul li{
+  float: left;
+  padding: 9px;
+}
+
+.carousel-nav ul li a {
+  -moz-border-radius: 30px;
+  -moz-box-shadow: 0px 0px 30px #000;
+  -webkit-border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 30px #000;
+  background-color: #333; 
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px #000;
+  display: block;
+  float: left; 
+  height: 20px;
+  margin: 0 10px;
+  text-indent: -9999px;
+  width: 20px;
+}
+
+
+}
