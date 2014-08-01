@@ -4,17 +4,31 @@
 }
 
 .slider-container {
-  height: 400px;
-  margin: 0 auto;
+  height: 30%;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 40%;
+}
+
+.slider-container1 {
+  top:0%;
+  left:25%;
+}
+
+.slider-container2 {
+  top:0%;
+  left:0%;
+}
+
+.slider-container3 {
+  top:0%;
+  left:40%;
 }
 
 .slider {
-  height: 100%;
-  position: relative;
+  height: 80%;
   left: 0px;
+  position: relative;
   width: 100%;
 }
 
@@ -43,24 +57,28 @@
   background: #00000F;
 }
 
-.carousel-nav {
+.carousel-nav,
+.back-forward-nav {
   display: none;
-  height: 50px;
+  height: 20%;
   margin: 0 auto;
   width: 200px;
 }
 
-.carousel-nav ul {
+.carousel-nav ul,
+.back-forward-nav ul {
   margin: 0;
   padding: 0;
 }
 
-.carousel-nav ul li{
+.carousel-nav ul li,
+.back-forward-nav ul li {
   float: left;
-  padding: 9px;
+  padding: 9px 6px;
 }
 
-.carousel-nav ul li a {
+.carousel-nav ul li a,
+.back-forward-nav ul li a {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   background-color: #333;
@@ -73,7 +91,8 @@
   width: 20px;
 }
 
-.carousel-nav ul li a:hover {
+.carousel-nav ul li a:hover,
+.back-forward-nav ul li a:hover {
   -moz-box-shadow: 0px 0px 30px #000;
   -webkit-box-shadow: 0px 0px 30px #000;
   box-shadow: 0px 0px 30px #000;
@@ -81,17 +100,25 @@
 
 @media only screen and (max-width : 400px) {
 
-.slider-container {
-  width: 100%;
+.slider1 {
+  width: 500% !important; /* number of slides * 100 */
 }
 
-.slider {
-  width: 600%;
+.slider2 {
+  width: 300% !important; /* number of slides * 100 */
+}
+
+.slider3 {
+  width: 300% !important; /* number of slides * 100 */
 }
 
 .slide {
-  width: 33.3%;
+  width: 100%;
   position: relative;
+}
+
+.back-forward-nav {
+  display: inherit;
 }
 
 .carousel-nav {
@@ -100,11 +127,7 @@
 
 .carousel-nav ul {
   height: 100%;
-  margin: 0;
   width: 100%;
 }
-
-
-
 
 }
